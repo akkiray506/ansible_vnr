@@ -1,0 +1,9 @@
+---
+- name: Create directory and file in /opt on CentOS
+  hosts: all
+  tasks:
+    - name: Create directory /opt/hyderabad
+      command: mkdir -p /opt/hyderabad
+
+    - name: Create india file inside /opt/hyderabad
+      command: touch /opt/hyderabad/india
